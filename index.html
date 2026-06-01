@@ -59,6 +59,20 @@
   .prio-h{color:var(--bad); font-weight:700;}
   .prio-m{color:var(--warn); font-weight:700;}
   .prio-l{color:var(--ok); font-weight:700;}
+  .overview{display:flex; flex-direction:column; gap:14px;}
+  .ov-card{border-radius:10px; padding:16px 20px; border:1px solid var(--line);}
+  .ov-why{background:#eef3fb; border-color:#cfe0fb;}
+  .ov-str{background:#eafaf0; border-color:#bce8cd;}
+  .ov-gap{background:#fff8e8; border-color:#f0deb0;}
+  .ov-head{font-size:15px; font-weight:700; color:var(--navy); margin-bottom:8px;}
+  .ov-num{display:inline-block; width:24px; height:24px; line-height:24px; text-align:center;
+    background:var(--navy); color:#fff; border-radius:50%; font-size:13px; margin-right:6px;}
+  .ov-sub{font-size:12px; font-weight:400; color:#7a869a; margin-left:4px;}
+  .ov-card p{margin:6px 0; font-size:13.8px;}
+  .ov-quote{background:#fff; border-left:4px solid var(--ok); padding:8px 12px; border-radius:4px; font-weight:600; color:#176c3a;}
+  .ov-card ul{margin:8px 0 0; padding-left:18px;} .ov-card li{margin:5px 0; font-size:13.8px;}
+  .ov-table{margin-top:4px;} .ov-table th{background:#a07d20;} .ov-table td{background:#fffdf7;}
+  .ov-foot{font-size:13px; color:#8a6d1a; margin-top:10px !important; font-weight:600;}
   .ask{background:#fff8e8; border:1px solid #f0deb0; border-radius:10px; padding:16px 22px;}
   .ask ol{margin:0; padding-left:20px;} .ask li{margin:7px 0; font-size:14px;}
   footer{padding:20px 44px 34px; border-top:1px solid var(--line); color:#7a869a; font-size:12.5px;}
@@ -83,6 +97,38 @@
   </div>
 
   <main>
+    <section>
+      <h2>0. 추진 개요 <span style="font-size:13px;font-weight:400;color:#7a869a;">(왜 · 강점 · 보완)</span></h2>
+      <div class="overview">
+        <div class="ov-card ov-why">
+          <div class="ov-head"><span class="ov-num">①</span> 왜 출품하는가 <span class="ov-sub">추진 배경·목적</span></div>
+          <p>회사가 <b>AI 기반 체질개선</b>을 전략방향으로 제시한 가운데, 선행기구개발그룹은 <b>1월부터 자발적으로 조직문화·AI 학습 활동을 지속</b>해 왔습니다. 이 활동을 공적상으로 <b>공식 인정</b>받아 ① 그룹의 조직문화·학습 성과를 회사 차원에서 가시화하고, ② 구성원의 자긍심·참여 동기를 강화하며, ③ 타 그룹으로 확산 가능한 <b>모범 사례로 정착</b>시키기 위해 출품합니다.</p>
+        </div>
+        <div class="ov-card ov-str">
+          <div class="ov-head"><span class="ov-num">②</span> 이것이 그룹의 강점이다</div>
+          <p class="ov-quote">"현업 엔지니어가 직접 AI로 조직문화와 학습을 견인한다" — 외주·하향식이 아닌 <b>자생적·지속적</b> 활동.</p>
+          <ul>
+            <li><b>지속성</b> — 월례회의를 <b>1월부터 6개월 연속</b> 운영 (단발성 아님)</li>
+            <li><b>자생성</b> — <b>AI 학습조직 자발 운영</b>으로 조직 AI 학습 문화 형성</li>
+            <li><b>실물 증빙</b> — 월례회의·GWP·교육 콘텐츠 등 <b>13종 실제 산출물</b></li>
+            <li><b>전략 부합</b> — 회사 AI 체질개선 방향과 정확히 일치 (AI 특화교육 가점)</li>
+          </ul>
+        </div>
+        <div class="ov-card ov-gap">
+          <div class="ov-head"><span class="ov-num">③</span> 부족한 부분은 이렇게 채운다</div>
+          <table class="ov-table">
+            <thead><tr><th>부족한 부분</th><th>채우는 방법</th></tr></thead>
+            <tbody>
+              <tr><td>효과성 <b>정량 데이터</b><br>(참여 인원·만족도)</td><td>월례회의 참석자 대상 <b>간단 설문</b>으로 수치 확보</td></tr>
+              <tr><td><b>AI 학습조직 실적</b> 정리</td><td>운영 기간·인원·회차·커리큘럼을 <b>별첨 자료</b>로 취합</td></tr>
+              <tr><td>인적사항·제출 양식</td><td>회사 양식에 맞춰 <b>단기 정리</b> (작성 완료 초안 활용)</td></tr>
+            </tbody>
+          </table>
+          <p class="ov-foot">→ 모두 <b>단기 보완이 가능한 형식·취합 작업</b>이며, 공적의 실체(활동·산출물)는 이미 확보되어 있습니다.</p>
+        </div>
+      </div>
+    </section>
+
     <section>
       <h2>1. 한 줄 요약</h2>
       <div class="summary">

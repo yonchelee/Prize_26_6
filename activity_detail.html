@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>실행 활동 상세 (별첨) — 입력용 템플릿</title>
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0; background:#e9edf3; color:#111;
+    font-family:"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif;}
+  .sheet{width:980px; margin:26px auto; background:#fff; padding:46px 54px;
+    box-shadow:0 3px 18px rgba(0,0,0,.12);}
+  .doc-title{text-align:center; font-size:23px; font-weight:800; letter-spacing:.5px; margin:0 0 2px;}
+  .org{text-align:center; font-size:13px; color:#444; border-bottom:3px solid #1b2a4a; padding-bottom:12px; margin-bottom:10px;}
+  .legend{background:#eef3fb; border:1px solid #cfe0fb; border-radius:6px; padding:9px 14px; font-size:12.5px; color:#2456a6; margin-bottom:14px;}
+  .legend b{color:#1b2a4a;}
+  h2.band{margin:24px 0 12px; padding:8px 14px; border-radius:6px; font-size:16px; font-weight:800; color:#fff;}
+  .b-blue{background:linear-gradient(90deg,#1b2a4a,#2456a6);}
+  .b-pink{background:linear-gradient(90deg,#b23a6b,#d4567f);}
+  .b-green{background:linear-gradient(90deg,#1a7a4a,#1b9e63);}
+  /* 입력란 스타일 */
+  .fill{display:inline-block; min-width:180px; border:1.4px dashed #9aa9c4; background:#fbfdff;
+    border-radius:4px; padding:3px 10px; color:#8a93a6; font-size:12.5px; line-height:1.7;}
+  .fill.block{display:block; min-height:30px; margin:3px 0;}
+  .fill::before{content:"✍ "; color:#2456a6;}
+  .filled{color:#111;}  /* 이미 채워진 값 */
+  /* 월례회 3대 구성 */
+  .struct{display:flex; gap:12px; margin-bottom:6px;}
+  .scard{flex:1; border:1.4px solid; border-radius:8px; padding:12px 14px;}
+  .s1{border-color:#d4a017; background:#fff9e8;} .s2{border-color:#2456a6; background:#eef3fb;} .s3{border-color:#1b9e63; background:#eafaf0;}
+  .scard .sn{font-size:12px; font-weight:800; color:#fff; padding:2px 8px; border-radius:10px; display:inline-block; margin-bottom:6px;}
+  .s1 .sn{background:#d4a017;} .s2 .sn{background:#2456a6;} .s3 .sn{background:#1b9e63;}
+  .scard .st{font-size:13.5px; font-weight:700; color:#1b2a4a;}
+  .scard .sd{font-size:12px; color:#555; margin-top:4px; line-height:1.5;}
+  /* 활동 카드 */
+  .act{border:1px solid #ccd3df; border-left:4px solid #2456a6; border-radius:6px; padding:11px 15px; margin:10px 0;}
+  .act.pink{border-left-color:#b23a6b;} .act.green{border-left-color:#1b9e63;}
+  .act .an{font-size:14.5px; font-weight:800; color:#1b2a4a; margin-bottom:6px;}
+  .act .row{font-size:13px; line-height:1.7; margin:3px 0;}
+  .act .row b{color:#2456a6;} .act.pink .row b{color:#b23a6b;} .act.green .row b{color:#1a7a4a;}
+  .mon{display:inline-block; font-size:12px; font-weight:800; color:#fff; background:#1b2a4a; padding:2px 10px; border-radius:11px; margin:16px 0 2px;}
+  table{width:100%; border-collapse:collapse; font-size:12.8px; margin-top:6px;}
+  th,td{border:1px solid #b9c2d0; padding:8px 10px; text-align:left; vertical-align:top;}
+  th{background:#dde6f3; color:#1b2a4a; font-weight:700; text-align:center; white-space:nowrap;}
+  tbody tr:nth-child(even){background:#f9fafd;}
+  .hl-row{background:#fff4d2 !important;}
+  .note{font-size:11.5px; color:#8a6d1a; margin-top:6px; font-style:italic;}
+  @media print{body{background:#fff;} .sheet{box-shadow:none; margin:0; width:auto;}}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <h1 class="doc-title">실행 활동 상세 〈별첨〉 — 입력용 템플릿</h1>
+  <div class="org">MX사업부 선행기구개발그룹 · '26년 상반기 (1~6월)</div>
+  <div class="legend">📌 <b>점선 ✍ 박스</b>는 입력란입니다. 회사 자료를 참고해 해당 칸만 채우시면 됩니다. (검은 글씨는 이미 확인된 내용)</div>
+
+  <!-- Ⅰ. 월례회의 공통 구조 -->
+  <h2 class="band b-blue">Ⅰ. 월례회의 공통 운영 구조 (매월 반복 운영)</h2>
+  <div class="struct">
+    <div class="scard s1"><span class="sn">① 인트로 영상</span>
+      <div class="st">AI 모티베이션 영상</div>
+      <div class="sd">회의 오프닝 영상 상영 → AI 활용 동기부여·분위기 환기</div></div>
+    <div class="scard s2"><span class="sn">② 파트별 AI 활동</span>
+      <div class="st">부서별 AI 활용 업무 발표 ★</div>
+      <div class="sd">각 파트가 실제 업무에 AI를 적용한 사례 발표·공유 <b>(핵심 차별 활동)</b></div></div>
+    <div class="scard s3"><span class="sn">③ QR 미니게임</span>
+      <div class="st">그룹원 실시간 참여 게임</div>
+      <div class="sd">QR 접속 실시간 미니게임 (상품 증정) → 몰입·재미·소통 제고</div></div>
+  </div>
+
+  <!-- Ⅱ. 부서별 AI 활동 발표 모음 -->
+  <h2 class="band b-pink">Ⅱ. 부서별(파트별) AI 활동 발표 모음 ★ 별도 강조</h2>
+  <p style="font-size:12.5px;color:#555;margin:0 0 4px;">월례회의 핵심 세션 — 각 파트가 자기 업무에 AI를 적용한 실제 사례를 매월 공유</p>
+  <table>
+    <thead><tr><th style="width:60px;">월</th><th style="width:160px;">발표 파트</th><th>AI 활용 내용</th><th style="width:150px;">연계 성과</th></tr></thead>
+    <tbody>
+      <tr><td>1월</td><td><span class="fill">파트명</span></td><td><span class="fill">AI 활용 내용</span></td><td><span class="fill">성과</span></td></tr>
+      <tr><td>2월</td><td><span class="fill">파트명</span></td><td><span class="fill">AI 활용 내용</span></td><td><span class="fill">성과</span></td></tr>
+      <tr><td>3월</td><td><span class="fill">파트명</span></td><td><span class="fill">AI 활용 내용</span></td><td><span class="fill">성과</span></td></tr>
+      <tr><td>4월</td><td class="filled">패키지 파트</td><td class="filled">AI Implementation — <b>패키지 설계 자동화</b> (업무 분석 → 로드맵 → 기대효과)</td><td class="filled">설계 자동화 도구화</td></tr>
+      <tr class="hl-row"><td>5월</td><td class="filled"><b>선행 CMF1 파트</b></td><td class="filled"><b>AX 활용 — MetaliX 플랫폼</b> 적용 사례</td><td class="filled">플랫폼 기반 업무 효율화</td></tr>
+      <tr><td>6월</td><td><span class="fill">파트명</span></td><td><span class="fill">AI 활용 내용</span></td><td><span class="fill">성과</span></td></tr>
+    </tbody>
+  </table>
+  <div class="note">※ 4·5월은 확인 완료. 1·2·3·6월 발표 파트·내용을 입력란에 기입.</div>
+
+  <!-- Ⅲ. 월별 활동 -->
+  <h2 class="band b-blue">Ⅲ. 월별 실행 활동 상세 〈ㅁ 활동명 / -목표 / -설명 / -결과〉</h2>
+
+  <div class="mon">1월</div>
+  <div class="act"><div class="an">ㅁ 1월 월례회의</div>
+    <div class="row"><b>- 활동 목표:</b> <span class="fill">활동 목표 입력</span></div>
+    <div class="row"><b>- 활동 설명:</b> 3대 구성(인트로 영상·파트별 AI 활동·QR 미니게임) 운영 / <span class="fill">1월 세부 내용·발표 파트·게임명 입력</span></div>
+    <div class="row"><b>- 활동의 결과:</b> <span class="fill">결과·참여 인원 입력</span></div>
+  </div>
+
+  <div class="mon">2월</div>
+  <div class="act"><div class="an">ㅁ 2월 월례회의</div>
+    <div class="row"><b>- 활동 목표:</b> <span class="fill">활동 목표 입력</span></div>
+    <div class="row"><b>- 활동 설명:</b> 3대 구성 운영 / <span class="fill">2월 세부 내용·발표 파트·게임명 입력</span></div>
+    <div class="row"><b>- 활동의 결과:</b> <span class="fill">결과·참여 인원 입력</span></div>
+  </div>
+
+  <div class="mon">3월</div>
+  <div class="act"><div class="an">ㅁ 3월 월례회의 <span style="font-size:11px;color:#b23a6b;font-weight:400;">(원본 파일 확인 필요 — 회사 자료 기준 입력)</span></div>
+    <div class="row"><b>- 활동 목표:</b> <span class="fill">활동 목표 입력</span></div>
+    <div class="row"><b>- 활동 설명:</b>
+      <div class="fill block">① 인트로 영상(AI 모티베이션): 입력</div>
+      <div class="fill block">② 파트별 AI 활동 발표 — 파트명/AI 활용 업무: 입력</div>
+      <div class="fill block">③ QR 미니게임 — 게임명/방식: 입력</div>
+    </div>
+    <div class="row"><b>- 활동의 결과:</b> <span class="fill">결과·참여 인원 입력</span></div>
+  </div>
+  <div class="act pink"><div class="an">ㅁ GWP 단합행사 기획·운영</div>
+    <div class="row"><b>- 활동 목표:</b> One Team 결속력 강화, 구성원 관계 형성</div>
+    <div class="row"><b>- 활동 설명:</b> "관계를 읽다, 관계를 잇다" 컨셉 — DISC 진단·팀빌딩·레이저태그·볼링·회식, 행사 가이드 웹·좌석배치·경품추첨 자체 운영</div>
+    <div class="row"><b>- 활동의 결과:</b> 단합행사 성공 개최, 부서 결속력 제고 / <span class="fill">참여 인원 입력</span></div>
+  </div>
+
+  <div class="mon">4월</div>
+  <div class="act"><div class="an">ㅁ 4월 월례회의</div>
+    <div class="row"><b>- 활동 목표:</b> "새로운 시도와 함께하는 한 달" — AI 적용 시도 확산</div>
+    <div class="row"><b>- 활동 설명:</b> ① 인트로 오프닝 영상 ② <b>파트별 AI 활동: AI Implementation — 패키지 설계 자동화</b>(업무 분석·로드맵·기대효과) ③ QR 접속 미니게임</div>
+    <div class="row"><b>- 활동의 결과:</b> 패키지 설계 자동화 사례 공유, AI 적용 분위기 확산 / <span class="fill">게임 참여 인원 입력</span></div>
+  </div>
+
+  <div class="mon">5월</div>
+  <div class="act"><div class="an">ㅁ 5월 월례회의</div>
+    <div class="row"><b>- 활동 목표:</b> "장미가 피어나는 5월, 새로운 시작" — 파트 AX 활용 본격 공유</div>
+    <div class="row"><b>- 활동 설명:</b> ① 인트로 오프닝 영상 ② <b>파트별 AI 활동: 선행 CMF1 파트 AX 활용 — MetaliX 플랫폼</b> ③ <b>QR 미니게임 '5.27 STOP 챌린지'</b>(5.27초 맞추기·상품 증정) + 2분기 GWP("AI와 함께하는 GWP" 6/18) 안내</div>
+    <div class="row"><b>- 활동의 결과:</b> 선행 CMF1 파트 AX 사례 전파, 미니게임 호응 / <span class="fill">참여 인원 입력</span></div>
+  </div>
+
+  <div class="mon">6월</div>
+  <div class="act"><div class="an">ㅁ 6월 월례회의</div>
+    <div class="row"><b>- 활동 목표:</b> 상반기 AI 활동 결산, 2분기 GWP 연계</div>
+    <div class="row"><b>- 활동 설명:</b> 3대 구성 운영 + "AI와 함께하는 GWP"(6/18) 연계 / <span class="fill">6월 세부 내용·발표 파트·게임명 입력</span></div>
+    <div class="row"><b>- 활동의 결과:</b> <span class="fill">결과·참여 인원 입력</span></div>
+  </div>
+
+  <!-- Ⅳ. AI 학습조직 커리큘럼 -->
+  <h2 class="band b-green">Ⅳ. AI 학습조직 커리큘럼 (성장 핵심 · 입력)</h2>
+  <p style="font-size:12.5px;color:#555;margin:0 0 4px;">자율 운영한 AI 학습조직의 차시별 교육 내용 — 회사 자료 기준 입력</p>
+  <table>
+    <thead><tr><th style="width:70px;">차시</th><th style="width:200px;">교육 주제</th><th>핵심 내용</th><th style="width:160px;">업무 적용·성과</th></tr></thead>
+    <tbody>
+      <tr><td>1차시</td><td><span class="fill">주제</span></td><td><span class="fill">핵심 내용</span></td><td><span class="fill">적용·성과</span></td></tr>
+      <tr><td>2차시</td><td><span class="fill">주제</span></td><td><span class="fill">핵심 내용</span></td><td><span class="fill">적용·성과</span></td></tr>
+      <tr><td>3차시</td><td><span class="fill">주제</span></td><td><span class="fill">핵심 내용</span></td><td><span class="fill">적용·성과</span></td></tr>
+      <tr><td><span class="fill">차시</span></td><td><span class="fill">주제</span></td><td><span class="fill">핵심 내용</span></td><td><span class="fill">적용·성과</span></td></tr>
+    </tbody>
+  </table>
+  <div class="note">※ 운영 기간·참여 인원: <span class="fill">기간(예: '26.O월~O월)</span> / <span class="fill">참여 인원 OO명</span></div>
+
+  <!-- Ⅴ. 상시·기반 활동 -->
+  <h2 class="band b-green">Ⅴ. 상반기 상시·기반 활동 (월례회 外)</h2>
+  <div class="act green"><div class="an">ㅁ '26년 조직문화 개선 방안 수립 (연초 계획)</div>
+    <div class="row"><b>- 활동 목표:</b> One Team 결속력 강화를 위한 조직문화 개선 방향 정립</div>
+    <div class="row"><b>- 활동 설명:</b> 소통·배려·워라밸/학습 <b>3대 과제</b> 선정 및 실행 계획 수립</div>
+    <div class="row"><b>- 활동의 결과:</b> 상반기 전 활동(월례회의·GWP)의 기준틀 제공</div>
+  </div>
+  <div class="act green"><div class="an">ㅁ AI 교육 콘텐츠 제작 — agentflow</div>
+    <div class="row"><b>- 활동 목표:</b> 현장 주도 AI 역량 내재화, 재사용 교육 자산 구축</div>
+    <div class="row"><b>- 활동 설명:</b> AI 에이전트(RAG·LangChain) 교육 가이드 'agentflow' 자체 제작 (AI 교육 가점 대상)</div>
+    <div class="row"><b>- 활동의 결과:</b> 학습조직 커리큘럼과 연계, 파트별 AI 성과물로 확산</div>
+  </div>
+  <div class="act green"><div class="an">ㅁ 파트별 AI 성과물 도출</div>
+    <div class="row"><b>- 활동 목표:</b> 학습 내용의 실무 적용·업무 개선</div>
+    <div class="row"><b>- 활동 설명:</b> 각 파트가 학습조직·월례회의 발표를 통해 업무 자동화 도구 등 실제 AI 결과물 산출</div>
+    <div class="row"><b>- 활동의 결과:</b> 부서원 AI 역량 강화 / <span class="fill">성과물 OO건 · 업무효율 OO% 개선 입력</span></div>
+  </div>
+  <div class="act green"><div class="an">ㅁ 회식 선택 도우미 App 제작</div>
+    <div class="row"><b>- 활동 목표:</b> 회식 의사결정 피로 해소, 참여 편의 제고</div>
+    <div class="row"><b>- 활동 설명:</b> 인원·위치·메뉴 기반 식당 추천 + 셔틀 교통편 연동 웹 App</div>
+    <div class="row"><b>- 활동의 결과:</b> 회식 준비 간소화, 구성원 편의 향상</div>
+  </div>
+
+</div>
+</body>
+</html>
